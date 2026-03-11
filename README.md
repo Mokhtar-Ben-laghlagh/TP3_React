@@ -1,70 +1,73 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TP3 React
 
-## Available Scripts
+Un TP React multi-pages avec navigation, lecteur audio, gestion de tâches et système de connexion.
 
-In the project directory, you can run:
+## Aperçu
 
-### `npm start`
+![Aperçu de l'application](./src/Logo.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Fonctionnalités
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Navigation** entre les pages Accueil et À propos via React Router
+- **Système de connexion** avec état connecté/déconnecté
+- **Lecteur audio** intégré
+- **Liste de tâches** interactive
+- **Logo** affiché sur la page d'accueil
 
-### `npm test`
+## Structure du projet
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+src/
+├── App.js            # Composant principal avec routing
+├── App.css           # Styles globaux
+├── index.js          # Point d'entrée React
+├── Logo.png          # Logo de l'application
+├── Accueil.js        # Page d'accueil
+├── Apropos.js        # Page À propos
+├── Connexion.js      # Composant de connexion
+├── LecteurAudio.js   # Composant lecteur audio
+└── ListeTaches.js    # Composant liste de tâches
+```
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Cloner le projet
+git clone <url-du-repo>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Installer les dépendances
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Lancer le serveur de développement
+npm start
+```
 
-### `npm run eject`
+L'application sera disponible sur [http://localhost:3000](http://localhost:3000)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Technologies utilisées
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React 18](https://react.dev/) — Bibliothèque UI
+- [React Router DOM](https://reactrouter.com/) — Navigation entre pages
+- [Create React App](https://create-react-app.dev/) — Configuration du projet
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Pages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Accueil (`/`)
+- Affiche le logo
+- Lecteur audio
+- Liste de tâches
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### À propos (`/apropos`)
+- Informations sur l'application
 
-### Code Splitting
+## Notes importantes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Utiliser `import logo from './Logo.png'` puis `<img src={logo} alt="logo" />` pour afficher les images
+- Tous les composants doivent avoir un `export default`
+- Les noms de composants React commencent par une **majuscule**
 
-### Analyzing the Bundle Size
+https://github.com/user-attachments/assets/de548aeb-6d65-4160-b1ee-9307e04117e0
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
