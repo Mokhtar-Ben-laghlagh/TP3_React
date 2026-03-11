@@ -3,9 +3,6 @@
 
 Un TP React multi-pages avec navigation, lecteur audio, gestion de tâches et système de connexion.
 
-## Aperçu
-
-![Aperçu de l'application](./src/Logo.png)
 
 ## Fonctionnalités
 
@@ -68,6 +65,8 @@ L'application sera disponible sur [http://localhost:3000](http://localhost:3000)
 - Utiliser `import logo from './Logo.png'` puis `<img src={logo} alt="logo" />` pour afficher les images
 - Tous les composants doivent avoir un `export default`
 - Les noms de composants React commencent par une **majuscule**
+
+## Video démonstrative :
 
 https://github.com/user-attachments/assets/de548aeb-6d65-4160-b1ee-9307e04117e0
 
